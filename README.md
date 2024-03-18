@@ -5,12 +5,7 @@
 # Product Overview
 
 - The Rental & Services Management System project, driven by the founder's experiences, aims to make the moving-in process easier for local and international students.
-- It addresses gaps in the rental platform market, focusing on apartment rentals and related services tailored for students at Indiana University of Bloomington. 
-- The system features extensive property listings, including details like proximity to essential amenities, thus centralizing information and reducing the need to visit multiple platforms.
-- It also offers tools such as multimedia content, map views, and user reviews to aid in decision-making, and simplifies the access to services like transportation and utilities setup.
-- By integrating messaging and chat, it creates a community space that enhances the experience for international students during a pivotal life transition.
-
-## Introduction
+- It addresses gaps in the rental platform market, focusing on apartment rentals and related services tailored for students at UNA
 
 We're going to build an API for an apartment management company. Create the
 following database structure. You will have three models (and their
@@ -28,9 +23,9 @@ needed to create the relationships defined above):
   - number
 - Tenant
   - name (must be present)
-  - age (must be >= 18)
+  - age 
 - Lease
-  - rent
+  - rent (1 - 6 - 12)
 
 Make sure to define validations for your models so that no bad data can be saved
 to the database.
