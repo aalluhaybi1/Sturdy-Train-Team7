@@ -26,6 +26,10 @@ needed to create the relationships defined above):
   - age 
 - Lease
   - rent (1 - 6 - 12)
+## Deliverables
 
-Make sure to define validations for your models so that no bad data can be saved
-to the database.
+As a user, I can:
+
+- Create, read, update and delete **Apartments**
+- Create, read, update and delete **Tenants**
+- Create and delete **Lease**
