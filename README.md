@@ -7,8 +7,7 @@
 - The Rental & Services Management System project, driven by the founder's experiences, aims to make the moving-in process easier for local and international students.
 - It addresses gaps in the rental platform market, focusing on apartment rentals and related services tailored for students at UNA
 
-We're going to build an API for an apartment management company. Create the
-following database structure. You will have three models (and their
+We're going to build  an apartment management company (UNA Housing). You will have three models (and their
 corresponding tables), `Apartment`, `Tenant` and `Lease`, with the following
 relationships:
 
