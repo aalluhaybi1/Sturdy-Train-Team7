@@ -19,8 +19,8 @@ relationships:
 The models should have the following attributes (along with any attributes
 needed to create the relationships defined above):
 
-- Apartment
-  - number
+-  Apartment
+ -  number
 - Tenant
   - name (must be present)
   - age 
@@ -30,6 +30,6 @@ needed to create the relationships defined above):
 
 As a user, I can:
 
-- Create, read, update and delete **Apartments**
-- Create, read, update and delete **Tenants**
-- Create and delete **Lease**
+- [ ] Create, read, update and delete **Apartments**
+- [ ] Create, read, update and delete **Tenants**
+- [ ] Create and delete **Lease**
