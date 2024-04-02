@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Premium Bootstrap 5 Landing Page Template" name="description" />
+    <meta content="bootstrap 5, premium, marketing, multipurpose" name="keywords" />
+    <meta content="Coderthemes" name="author" />
+    <!-- Site Title -->
+    <title>housing</title>
+    <!--Material Icon -->
+    <link crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.3.67/css/materialdesignicons.min.css"
+        integrity="sha512-nRzny9w0V2Y1/APe+iEhKAwGAc+K8QYCw4vJek3zXhdn92HtKt226zHs9id8eUq+uYJKaH2gPyuLcaG/dE5c7A=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Tajawal:wght@200;300;400;500;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://arabyai-webpages.s3.me-south-1.amazonaws.com/template_website/araby_ai_template/css/animate.css"
+        rel="stylesheet" />
+    <link href="https://arabyai-webpages.s3.me-south-1.amazonaws.com/template_website/testing_template/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <link class="style" href="css/style.css" rel="stylesheet" />
+    <style>
+
+        button {
+            font-family: "Poppins";
+        }
+
+        .contact_details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Change to center */
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .contact_details {
+                flex-direction: row;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #00c0d9;
+            color: #423f32;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .button i {
+            margin-right: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body data-bs-offset="60" data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark" id="navbar-sticky">
+        <div class="container">
+            <a class="logo text-uppercase" href="#home">
+                <img alt="" src="https://www.una.edu/brand/images/logo/round/UNA-roundLionPurpleW.png" width="50px"/>
+            </a>
+            <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:5500/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#http://localhost:5500/#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Housing Options Section -->
+    <div class="container-fluid bg-light py-5">
+        <div class="row d-flex justify-content-center align-items-center flex-column">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1 class="display-5 mb-3"><strong>Housing</strong></h1>
+                        <p class="fs-5 mb-5">Two options for you to choose from:</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#housing-for-individuals" class="btn btn-primary me-3">Housing for Individuals</a>
+                            <a href="#housing-for-family" class="btn btn-success">Housing for Family</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Housing Options Section End -->
+
+    <!-- Housing for Family Section -->
+    <section id="housing-for-family" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-5">Housing for Family</h2>
+                    <p style="font-size: larger;">Being international students without social security numbers, I've selected several family-friendly apartments for you. These options are particularly accommodating as they do not necessitate a social security number for the rental process.</p><br>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">University Apartment</h5>
+                                    <!-- Form for University Apartment -->
+                                    <form method="POST" action="/addName">
+                                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                                        <input name="fname" placeholder="First Name">
+                                        <input name="lname" placeholder="Last Name">
+                                        <input name="phone" placeholder="Phone Number">
+                                        <input name="email" placeholder="Email">
+                                        <div class="mb-3">
+                                            <label for="noteFamily" class="form-label">Note</label>
+                                            <textarea class="form-control" id="noteFamily" name="noteFamily"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="apartmentTypeIndividuals" class="form-label">Apartment Type</label>
+                                            <select class="form-select" id="apartmentTypeIndividuals" name="apartmentTypeIndividuals">
+                                                <option value="apartment">Oak Rage - Florance</option>
+                                                <option value="apartment">Seville Place - Florance</option>
+                                                <option value="apartment">Arbor Village - Muscle Sholse</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    <pre>
+                                      </form>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </section>
+                                    <!-- Housing for Family Section End -->
+
+                                    <!-- Individuals Start -->
+                                    <section id="housing-for-individuals" class="py-5">
+                                      <div class="container">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <h2 class="text-center mb-5">Housing for Individuals</h2>
+
+                                            <h3>There are two basic types of housing available on campus:</h3><br>
+                                            <h4>1. Residence Halls</h4>
+                                            <p>UNA offers modern residence halls designed to enhance students' educational experiences. These halls foster a sense of community and provide a supportive living environment. If you're looking for a traditional on-campus housing experience, residence halls are a great choice.</p><br>
+                                            <h4>2. University Apartments</h4>
+                                            <p>In addition to residence halls, UNA also provides university apartments. These apartments offer a different living experience, combining the convenience of on-campus housing with more independent living arrangements. </p>
+                                            <p>If you have specific questions, feel free to reach out to the Housing & Residence Life office:</p>
+                                            <ul>
+                                                <li>Phone: 256-765-5558</li>
+                                                <li>Email: <a href="mailto:housing@una.edu">housing@una.edu</a></li>
+                                            </ul>
+                                            <p>UNA is committed to providing a supportive and enriching environment for all students, including international students like yourself! 🌟</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </section>
+                                    <!-- Individuals End -->
+                                    
+                                    <!-- Footer Section -->
+                                    <section class="footer bg-light" style="padding: 50px 20px">
+                                      <div class="pb-0" id="contact">
+                                        <!-- start container -->
+                                        <div class="container">
+                                          <div class="row">
+                                            <div class="col-md-4">
+                                              <div class="card">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">University Apartment</h5>
+                                                  <form method="POST" action="/addName">
+                                                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                                                    <input name="fname" placeholder="First Name">
+                                                    <input name="lname" placeholder="Last Name">
+                                                    <input name="phone" placeholder="Phone Number">
+                                                    <input name="email" placeholder="Email">
+                                                    <div class="mb-3">
+                                                      <label for="noteFamily" class="form-label">Note</label>
+                                                      <textarea class="form-control" id="noteFamily" name="noteFamily"></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <label for="apartmentTypeIndividuals" class="form-label">Apartment Type</label>
+                                                      <select class="form-select" id="apartmentTypeIndividuals" name="apartmentTypeIndividuals">
+                                                        <option value="residence">Residence Hall</option>
+                                                        <option value="apartment">University Apartment</option>
+                                                      </select>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- end container -->
+                                      </div>
+                                    </section>
+
+                                    <!-- Library Records Section -->
+                                    <section class="py-5" style="background-color: #f8f9fa;">
+                                      <div class="container">
+                                        <div class="row">
+                                          <div class="col-md-9"></div>
+                                          <div class="container-fluid">
+                                            <!-- FILEPATH: /C:/Users/mrbas/OneDrive/Desktop/repos/aaaaa/templates/hous.ejs -->
+                                            <div class="card m-4 border-info text-black bg-white">
+                                              <h4 class="card-title">Library Records: <%= nameData.length %></h4>
+                                              <div class="card-body">
+                                                <table class="table table-hover">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">First Name</th>
+                                                      <th scope="col">Last Name</th>
+                                                      <th scope="col">Phone</th>
+                                                      <th scope="col">Email</th>
+                                                      <th scope="col">Apartment Type</th>
+                                                      
+                                                      <th scope="col">Actions</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <% for (var i = 0; i < nameData.length; i++) { %>
+                                                    <tr>
+                                                      <td>
+                                                        <form id="updateForm<%= i %>" method="POST" action="/updateName">
+                                                          <input type="hidden" name="devId" value="<%= nameData[i]._id %>">
+                                                          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                                                          <input type="text" name="fname" value="<%= nameData[i].fname %>">
+                                                      </td>
+                                                      <td>
+                                                        <input type="text" name="lname" value="<%= nameData[i].lname %>">
+                                                      </td>
+                                                      <td>
+                                                        <input type="text" name="phone" value="<%= nameData[i].phone %>">
+                                                      </td>
+                                                      <td>
+                                                        <input type="text" name="email" value="<%= nameData[i].email %>">
+                                                      </td>
+                                                      <td>
+                                                        <input type="text" name="apartmentTypeIndividuals" value="<%= nameData[i].apartmentTypeIndividuals %>">
+                                                      </td>
+                                                      <td>
+                                                        <button class="btn btn-secondary" type="submit" form="updateForm<%= i %>">Update Name Info</button>
+                                                        </form>
+                                                        <form method="POST" action="/deleteName">
+                                                          <input type="hidden" name="devId" value="<%= nameData[i]._id %>">
+                                                          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                                                          <button class="btn btn-danger" type="submit" style="background-color: rgba(0, 195, 255, 0.342);">Delete Name Info</button>
+                                                        </form>
+                                                      </td>
+                                                    </tr>
+                                                    <% } %>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </section>
+
+                                              <!-- Footer Section -->
+                                              <section class="footer bg-light" style="padding: 50px 20px">
+                                                <div class="pb-0" id="contact">
+                                                  <!-- start container -->
+                                                  <div class="container" style="padding-bottom: 40px">
+                                                    <div class="contact-item">
+                                                      <div class="row align-items-center">
+                                                        <div class="contact-info">
+                                                          <div class="mb-4">
+                                                            <h2>Let's Connect</h2>
+                                                          </div>
+                                                          <hr/>
+                                                          <div class="contact_details">
+                                                            <div class="info-content">
+                                                              <h5>Address :</h5>
+                                                              <div class="d-flex mt-2">
+                                                                <div class="icon">
+                                                                  <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                                                </div>
+                                                                <div class="icon-content ms-3">
+                                                                  <p class="mb-0 fs-15" id="address">1 Harrison Plaza, Florence, AL 35632</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="info-content">
+                                                              <h6>Support :</h6>
+                                                              <div class="d-flex mt-2">
+                                                                <div class="icon">
+                                                                  <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                                                                </div>
+                                                                <div class="icon-content ms-3">
+                                                                  <p class="mb-0 fs-15" id="email">Sbasalim@una.edu</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="info-content">
+                                                              <h6>Phone :</h6>
+                                                              <div class="d-flex mt-2">
+                                                                <div class="icon">
+                                                                  <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                                                                </div>
+                                                                <div class="icon-content ms-3">
+                                                                  <p class="mb-0 fs-15" id="mob_no">+1 419-322-8629</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </section>
+                                              <!-- footer & cta end -->
+
+                                              <!-- Scripts -->
+                                              <!-- Bootstrap JS -->
+                                              <script src="https://arabyai-webpages.s3.me-south-1.amazonaws.com/template_website/testing_template/js/bootstrap.bundle.min.js"></script>
+                                              <!-- Custom Script -->
+                                              <script>
+                                                // Add your custom JavaScript code here
+                                              </script>
