@@ -7,10 +7,11 @@
 > 
 # Product Overview
 
-- The Rental & Services Management System project, driven by the founder's experiences, aims to make the moving-in process easier for local and international students.
-- It addresses gaps in the rental platform market, focusing on apartment rentals and related services tailored for students at UNA
+Many international students face challenges when arriving in a new country, from difficulties in transportation to the challenge of finding suitable accommodation. For this reason, we decided to develop a program that guides students on how to commute from the airport to the university and how to find suitable housing. We use our experiences as international students to simplify the search for you. In our program, you will find most of what you need.
 
-# Story
+
+# Story...
+
 ![mermaid-diagram-20240328072243](https://github.com/aalluhaybi1/Sturdy-Train-Team7/assets/156353463/59152c39-f955-4a24-a163-584b0bf1e825)
 
 
@@ -20,5 +21,5 @@
 As a user, I can:
 
 - [ ] Create, read, update and delete **Apartments**
+![Screenshot 2024-04-02 065028‘UNA](https://github.com/aalluhaybi1/Sturdy-Train-Team7/assets/156353463/0a9143e1-ef33-4289-a336-7532bbc7a4a4)
 
-![una-rent](https://github.com/aalluhaybi1/Sturdy-Train-Team7/assets/156353463/81b5a140-1d1d-40df-8666-54151fc4ede7)
