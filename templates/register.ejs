@@ -106,7 +106,7 @@
             </div>
         </div>
     </nav>
-<body>
+<body><br></br><br></br>
     <h1>Register</h1>
     <!-- Display message for successful registration -->
     <% if (successMessage) { %>
@@ -115,9 +115,9 @@
     <form action="/register" method="POST">
         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" required><br></br>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required><br></br>
         <!-- Add confirm password field -->
         <label for="confirm_password">Confirm Password</label>
         <input type="password" id="confirm_password" name="confirm_password" required><br></br>
@@ -126,11 +126,11 @@
             <p style="color: red;"><%= errorMessage %></p>
         <% } %>
         <!-- Add more fields as needed -->
-        <button type="submit">Register</button>
+        <button type="submit">Register</button><br></br>
     </form>
 </body>
 </html>
- <button onclick="window.location.href = '/'">Back to Home</button>
+ <button onclick="window.location.href = '/'">Back to Home</button><br></br><br></br><br></br>
 </body>
 </html>
 <section class="footer bg-light" style="padding: 50px 20px">
