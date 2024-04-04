@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Premium Bootstrap 5 Landing Page Template" name="description" />
+    <meta content="bootstrap 5, premium, marketing, multipurpose" name="keywords" />
+    <meta content="Coderthemes" name="author" />
+    <!-- Site Title -->
+    <title>Log in </title>
+    <!--Material Icon -->
+    <link crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.3.67/css/materialdesignicons.min.css"
+        integrity="sha512-nRzny9w0V2Y1/APe+iEhKAwGAc+K8QYCw4vJek3zXhdn92HtKt226zHs9id8eUq+uYJKaH2gPyuLcaG/dE5c7A=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Tajawal:wght@200;300;400;500;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://arabyai-webpages.s3.me-south-1.amazonaws.com/template_website/araby_ai_template/css/animate.css"
+        rel="stylesheet" />
+    <link href="https://arabyai-webpages.s3.me-south-1.amazonaws.com/template_website/testing_template/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <link class="style" href="css/style.css" rel="stylesheet" />
+    <style>
+
+        button {
+            font-family: "Poppins";
+        }
+
+        .contact_details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Change to center */
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .contact_details {
+                flex-direction: row;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #00c0d9;
+            color: #423f32;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .button i {
+            margin-right: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+    </style>
+
 </head>
+<body data-bs-offset="60" data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark" id="navbar-sticky">
+        <div class="container">
+            <a class="logo text-uppercase" href="#home">
+                <img alt="" src="https://www.una.edu/brand/images/logo/round/UNA-roundLionPurpleW.png" width="50px"/>
+            </a>
+            <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center" id="mySidenav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <body>
     <h1>Login</h1>
     <form action="/login" method="POST">
@@ -23,3 +124,68 @@
     </form>
 </body>
 </html>
+ <button onclick="window.location.href = '/'">Back to Home</button>
+</body>
+</html>
+<section class="footer bg-light" style="padding: 50px 20px">
+    <div class="pb-0" id="contact">
+      <!-- start container -->
+      <div class="container" style="padding-bottom: 40px">
+        <div class="contact-item">
+          <div class="row align-items-center">
+            <div class="contact-info">
+              <div class="mb-4">
+                <h2>Let's Connect</h2>
+              </div>
+              <hr/>
+              <div class="contact_details">
+                <div class="info-content">
+                  <h5>Address :</h5>
+                  <div class="d-flex mt-2">
+                    <div class="icon">
+                      <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                    </div>
+                    <div class="icon-content ms-3">
+                      <p class="mb-0 fs-15" id="address">1 Harrison Plaza, Florence, AL 35632</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-content">
+                  <h6>Support :</h6>
+                  <div class="d-flex mt-2">
+                    <div class="icon">
+                      <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                    </div>
+                    <div class="icon-content ms-3">
+                      <p class="mb-0 fs-15" id="email">Sbasalim@una.edu</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-content">
+                  <h6>Phone :</h6>
+                  <div class="d-flex mt-2">
+                    <div class="icon">
+                      <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                    </div>
+                    <div class="icon-content ms-3">
+                      <p class="mb-0 fs-15" id="mob_no">+1 419-322-8629</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer & cta end -->
+
+  <!-- Scripts -->
+  <!-- Bootstrap JS -->
+  <script src="https://arabyai-webpages.s3.me-south-1.amazonaws.com/template_website/testing_template/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script>
+    // Add your custom JavaScript code here
+  </script>
+</body>
