@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <!-- Display message for successful registration -->
+    <% if (successMessage) { %>
+        <p style="color: green;"><%= successMessage %></p>
+    <% } %>
+    <form action="/register" method="POST">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <!-- Add confirm password field -->
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        <!-- Display message for password mismatch -->
+        <% if (errorMessage) { %>
+            <p style="color: red;"><%= errorMessage %></p>
+        <% } %>
+        <!-- Add more fields as needed -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
