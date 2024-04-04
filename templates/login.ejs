@@ -113,13 +113,13 @@
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required><br></br>
         <!-- Display message if password is incorrect -->
         <% if (typeof errorMessage !== 'undefined' && errorMessage !== null) { %>
             <p style="color: red;"><%= errorMessage %></p>
         <% } %>
         <!-- Add button for registration -->
-        <a href="/register">Register</a>
+        <button onclick="window.location.href = '/'">Register</button>
         <button type="submit">Login</button>
     </form>
 </body>
