@@ -152,12 +152,12 @@
                                             <textarea class="form-control" id="noteFamily" name="noteFamily"></textarea>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="apartmentTypeIndividuals" class="form-label">Apartment Type</label>
-                                            <select class="form-select" id="apartmentTypeIndividuals" name="apartmentTypeIndividuals">
-                                                <option value="apartment">Oak Rage - Florance</option>
-                                                <option value="apartment">Seville Place - Florance</option>
-                                                <option value="apartment">Arbor Village - Muscle Sholse</option>
-                                            </select>
+                                          <label for="apartmentSelect" class="form-label">Select an Apartment</label>
+                                          <select class="form-select" id="apartmentSelect" name="apartmentSelect">
+                                              <option value="Oak Rage - Florance">Oak Rage - Florance</option>
+                                              <option value="Seville Place - Florance">Seville Place - Florance</option>
+                                              <option value="Arbor Village - Muscle Sholse">Arbor Village - Muscle Sholse</option>
+                                          </select>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     <pre>
@@ -183,13 +183,7 @@
                                             <h4>1. Residence Halls</h4>
                                             <p>UNA offers modern residence halls designed to enhance students' educational experiences. These halls foster a sense of community and provide a supportive living environment. If you're looking for a traditional on-campus housing experience, residence halls are a great choice.</p><br>
                                             <h4>2. University Apartments</h4>
-                                            <p>In addition to residence halls, UNA also provides university apartments. These apartments offer a different living experience, combining the convenience of on-campus housing with more independent living arrangements. </p>
-                                            <p>If you have specific questions, feel free to reach out to the Housing & Residence Life office:</p>
-                                            <ul>
-                                                <li>Phone: 256-765-5558</li>
-                                                <li>Email: <a href="mailto:housing@una.edu">housing@una.edu</a></li>
-                                            </ul>
-                                            <p>UNA is committed to providing a supportive and enriching environment for all students, including international students like yourself! 🌟</p>
+                                            <p>In addition to residence halls, UNA also provides university apartments. These apartments offer a different living experience, combining the convenience of on-campus housing with more independent living arrangements.</p>
                                           </div>
                                         </div>
                                       </div>
@@ -235,67 +229,13 @@
                                     </section>
 
                                     <!-- Library Records Section -->
-                                    <section class="py-5" style="background-color: #f8f9fa;">
-                                      <div class="container">
-                                        <div class="row">
-                                          <div class="col-md-9"></div>
-                                          <div class="container-fluid">
-                                            <!-- FILEPATH: /C:/Users/mrbas/OneDrive/Desktop/repos/aaaaa/templates/hous.ejs -->
-                                            <div class="card m-4 border-info text-black bg-white">
-                                              <h4 class="card-title">Library Records: <%= nameData.length %></h4>
-                                              <div class="card-body">
-                                                <table class="table table-hover">
-                                                  <thead>
-                                                    <tr>
-                                                      <th scope="col">First Name</th>
-                                                      <th scope="col">Last Name</th>
-                                                      <th scope="col">Phone</th>
-                                                      <th scope="col">Email</th>
-                                                      <th scope="col">Apartment Type</th>
-                                                      
-                                                      <th scope="col">Actions</th>
-                                                    </tr>
-                                                  </thead>
-                                                  <tbody>
-                                                    <% for (var i = 0; i < nameData.length; i++) { %>
-                                                    <tr>
-                                                      <td>
-                                                        <form id="updateForm<%= i %>" method="POST" action="/updateName">
-                                                          <input type="hidden" name="devId" value="<%= nameData[i]._id %>">
-                                                          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                                                          <input type="text" name="fname" value="<%= nameData[i].fname %>">
-                                                      </td>
-                                                      <td>
-                                                        <input type="text" name="lname" value="<%= nameData[i].lname %>">
-                                                      </td>
-                                                      <td>
-                                                        <input type="text" name="phone" value="<%= nameData[i].phone %>">
-                                                      </td>
-                                                      <td>
-                                                        <input type="text" name="email" value="<%= nameData[i].email %>">
-                                                      </td>
-                                                      <td>
-                                                        <input type="text" name="apartmentTypeIndividuals" value="<%= nameData[i].apartmentTypeIndividuals %>">
-                                                      </td>
-                                                      <td>
-                                                        <button class="btn btn-secondary" type="submit" form="updateForm<%= i %>">Update Name Info</button>
-                                                        </form>
-                                                        <form method="POST" action="/deleteName">
-                                                          <input type="hidden" name="devId" value="<%= nameData[i]._id %>">
-                                                          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                                                          <button class="btn btn-danger" type="submit" style="background-color: rgba(0, 195, 255, 0.342);">Delete Name Info</button>
-                                                        </form>
-                                                      </td>
-                                                    </tr>
-                                                    <% } %>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </section>
+
+
+
+                                    <!-- i delete the db from this line  -->
+
+
+
 
                                               <!-- Footer Section -->
                                               <section class="footer bg-light" style="padding: 50px 20px">
