@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -158,7 +159,7 @@
     <div class="form-container" style="margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
         <h3 style="text-align: center;">Flight Information</h3>
         <!-- HTML form -->
-        <form id="myForm" method="POST" action="/addName" style="margin-top: 20px;">
+        <form method="POST" action="/addName" style="margin-top: 20px;">
             <!-- Add CSRF Token -->
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
             
@@ -182,7 +183,7 @@
                 <label for="mobileNumber" style="display: block; font-weight: bold;">Mobile Number:</label>
                 <input type="tel" id="mobileNumber" name="mobileNumber" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
             </div>
-            <button type="button" onclick="submitForm()" style="background-color: #00c0d9; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer; font-size: 16px;">Submit</button>
+            <input type="submit" value="Submit" style="background-color: #00c0d9; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer; font-size: 16px;">
         </form>
     </div>
 
@@ -258,21 +259,6 @@
         function showCarRentalOptions() {
             const carRentalOptions = document.getElementById('carRentalOptions');
             carRentalOptions.classList.toggle('hidden');
-        }
-
-        function submitForm() {
-            const formData = new FormData(document.getElementById('myForm'));
-            fetch('/addName', {
-                method: 'POST',
-                body: formData
-            }).then(response => {
-                // Handle response as needed
-                console.log(response);
-                // Optionally, you can redirect to another page
-                // window.location.href = '/thank-you-page';
-            }).catch(error => {
-                console.error('Error:', error);
-            });
         }
     </script>
 
