@@ -84,6 +84,16 @@ app.get('/hous', async (req, res) => {
   }
 });
 
+app.get('/ctc', async (req, res) => {
+  try {
+    const nameData = await getNameData();
+    res.render('ctc', { nameData, csrfToken: req.csrfToken() });
+  } catch (error) {
+    console.error('Error rendering contact page:', error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
 app.get('/fh', async (req, res) => {
   try {
     const nameData = await getNameData();
