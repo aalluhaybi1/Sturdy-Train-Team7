@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -126,115 +127,67 @@
         </div>
     </div>
     <!-- Housing Options Section End -->
-
-    <!-- Housing for Family Section -->
-    <section id="housing-for-family" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center mb-5">Housing for Family</h2>
-                    <p style="font-size: larger;">Being international students without social security numbers, I've selected several family-friendly apartments for you. These options are particularly accommodating as they do not necessitate a social security number for the rental process.</p><br>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">University Apartment</h5>
-                                    <!-- Form for University Apartment -->
-                                    <form method="POST" action="/addName">
-                                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                                        <input name="fname" placeholder="First Name">
-                                        <input name="lname" placeholder="Last Name">
-                                        <input name="phone" placeholder="Phone Number">
-                                        <input name="email" placeholder="Email">
-                                        <div class="mb-3">
-                                            <label for="noteFamily" class="form-label">Note</label>
-                                            <textarea class="form-control" id="noteFamily" name="noteFamily"></textarea>
-                                        </div>
-                                        <div class="mb-3">
-                                          <label for="apartmentSelect" class="form-label">Select an Apartment</label>
-                                          <select class="form-select" id="apartmentSelect" name="apartmentSelect">
-                                              <option value="Oak Rage - Florance">Oak Rage - Florance</option>
-                                              <option value="Seville Place - Florance">Seville Place - Florance</option>
-                                              <option value="Arbor Village - Muscle Sholse">Arbor Village - Muscle Sholse</option>
-                                          </select>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    <pre>
-                                      </form>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </section>
-                                    <!-- Housing for Family Section End -->
-
-                                    <!-- Individuals Start -->
-                                    <section id="housing-for-individuals" class="py-5">
-                                      <div class="container">
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <h2 class="text-center mb-5">Housing for Individuals</h2>
-
-                                            <h3>There are two basic types of housing available on campus:</h3><br>
-                                            <h4>1. Residence Halls</h4>
-                                            <p>UNA offers modern residence halls designed to enhance students' educational experiences. These halls foster a sense of community and provide a supportive living environment. If you're looking for a traditional on-campus housing experience, residence halls are a great choice.</p><br>
-                                            <h4>2. University Apartments</h4>
-                                            <p>In addition to residence halls, UNA also provides university apartments. These apartments offer a different living experience, combining the convenience of on-campus housing with more independent living arrangements.</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </section>
-                                    <!-- Individuals End -->
-                                    
-                                    <!-- Footer Section -->
-                                    <section class="footer bg-light" style="padding: 50px 20px">
-                                      <div class="pb-0" id="contact">
-                                        <!-- start container -->
-                                        <div class="container">
-                                          <div class="row">
-                                            <div class="col-md-4">
-                                              <div class="card">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">University Apartment</h5>
-                                                  <form method="POST" action="/addName">
-                                                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                                                    <input name="fname" placeholder="First Name">
-                                                    <input name="lname" placeholder="Last Name">
-                                                    <input name="phone" placeholder="Phone Number">
-                                                    <input name="email" placeholder="Email">
-                                                    <div class="mb-3">
-                                                      <label for="noteFamily" class="form-label">Note</label>
-                                                      <textarea class="form-control" id="noteFamily" name="noteFamily"></textarea>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                      <label for="apartmentTypeIndividuals" class="form-label">Apartment Type</label>
-                                                      <select class="form-select" id="apartmentTypeIndividuals" name="apartmentTypeIndividuals">
-                                                        <option value="residence">Residence Hall</option>
-                                                        <option value="apartment">University Apartment</option>
-                                                      </select>
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                                  </form>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <!-- end container -->
-                                      </div>
-                                    </section>
-
-                                    <!-- Library Records Section -->
-
-
-
-                                    <!-- i delete the db from this line  -->
-
-
+<section class="discover-area" id="discover">
+<div class="discover-shape shape-1">
+<img alt="" src="data:image/png;base64,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"/>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="discover-content-wrapper">
+<div class="section-title">
+<p class="sub-title">Family Housing </p>
+<h2 class="title" id="feat_title2">Family Housing </h2>
+</div>
+<div class="discover-content">
+<p id="feat_desc2" style="font-size: 16px">Prime Location</p>
+<a class="main-btn main-btn-2 bg-primary" href="/fh ">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="powerful-image mt-50 wow fadeInLeftBig" data-wow-delay="0.3s" data-wow-duration="1s">
+<div class="image">
+<img alt="" class="feature2" id="img-fluid" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%22949.85%22%20height%3D%22469.99%22%20viewBox%3D%220%200%20949.85%20469.99%22%3E%3Cpath%20d%3D%22m767.55%2C468H115.11c-8.14%2C0-14.76-6.62-14.76-14.76V14.76c0-8.14%2C6.62-14.76%2C14.76-14.76h652.44c8.14%2C0%2C14.76%2C6.62%2C14.76%2C14.76v438.47c0%2C8.14-6.62%2C14.76-14.76%2C14.76Z%22%20fill%3D%22%23fff%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m767.55%2C468H115.11c-8.14%2C0-14.76-6.62-14.76-14.76V14.76c0-8.14%2C6.62-14.76%2C14.76-14.76h652.44c8.14%2C0%2C14.76%2C6.62%2C14.76%2C14.76v438.47c0%2C8.14-6.62%2C14.76-14.76%2C14.76ZM115.11%2C6c-4.83%2C0-8.76%2C3.93-8.76%2C8.76v438.47c0%2C4.83%2C3.93%2C8.76%2C8.76%2C8.76h652.44c4.83%2C0%2C8.76-3.93%2C8.76-8.76V14.76c0-4.83-3.93-8.76-8.76-8.76H115.11Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m779.31%2C14.76v12.12H103.35v-12.12c0-6.5%2C5.27-11.76%2C11.76-11.76h652.44c6.5%2C0%2C11.76%2C5.27%2C11.76%2C11.76Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Ccircle%20cx%3D%22117.74%22%20cy%3D%2214.8%22%20r%3D%223.45%22%20fill%3D%22%23fff%22%20stroke-width%3D%220%22/%3E%3Ccircle%20cx%3D%22129.25%22%20cy%3D%2214.8%22%20r%3D%223.45%22%20fill%3D%22%23fff%22%20stroke-width%3D%220%22/%3E%3Ccircle%20cx%3D%22140.76%22%20cy%3D%2214.8%22%20r%3D%223.45%22%20fill%3D%22%23fff%22%20stroke-width%3D%220%22/%3E%3Crect%20x%3D%22161.48%22%20y%3D%2239.55%22%20width%3D%22552.22%22%20height%3D%2217.84%22%20rx%3D%228.92%22%20ry%3D%228.92%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m339.08%2C251.04h-118.96c-7.18%2C0-13.02-5.84-13.02-13.02v-101.7c0-7.18%2C5.84-13.02%2C13.02-13.02h118.96c7.18%2C0%2C13.02%2C5.84%2C13.02%2C13.02v101.7c0%2C7.18-5.84%2C13.02-13.02%2C13.02Zm-118.96-123.74c-4.97%2C0-9.02%2C4.05-9.02%2C9.02v101.7c0%2C4.97%2C4.05%2C9.02%2C9.02%2C9.02h118.96c4.97%2C0%2C9.02-4.05%2C9.02-9.02v-101.7c0-4.97-4.05-9.02-9.02-9.02h-118.96Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m500.81%2C251.04h-118.96c-7.18%2C0-13.02-5.84-13.02-13.02v-101.7c0-7.18%2C5.84-13.02%2C13.02-13.02h118.96c7.18%2C0%2C13.02%2C5.84%2C13.02%2C13.02v101.7c0%2C7.18-5.84%2C13.02-13.02%2C13.02Zm-118.96-123.74c-4.97%2C0-9.02%2C4.05-9.02%2C9.02v101.7c0%2C4.97%2C4.05%2C9.02%2C9.02%2C9.02h118.96c4.97%2C0%2C9.02-4.05%2C9.02-9.02v-101.7c0-4.97-4.05-9.02-9.02-9.02h-118.96Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m662.54%2C251.04h-118.96c-7.18%2C0-13.02-5.84-13.02-13.02v-101.7c0-7.18%2C5.84-13.02%2C13.02-13.02h118.96c7.18%2C0%2C13.02%2C5.84%2C13.02%2C13.02v101.7c0%2C7.18-5.84%2C13.02-13.02%2C13.02Zm-118.96-123.74c-4.97%2C0-9.02%2C4.05-9.02%2C9.02v101.7c0%2C4.97%2C4.05%2C9.02%2C9.02%2C9.02h118.96c4.97%2C0%2C9.02-4.05%2C9.02-9.02v-101.7c0-4.97-4.05-9.02-9.02-9.02h-118.96Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m339.08%2C410.04h-118.96c-7.18%2C0-13.02-5.84-13.02-13.02v-101.7c0-7.18%2C5.84-13.02%2C13.02-13.02h118.96c7.18%2C0%2C13.02%2C5.84%2C13.02%2C13.02v101.7c0%2C7.18-5.84%2C13.02-13.02%2C13.02Zm-118.96-123.74c-4.97%2C0-9.02%2C4.05-9.02%2C9.02v101.7c0%2C4.97%2C4.05%2C9.02%2C9.02%2C9.02h118.96c4.97%2C0%2C9.02-4.05%2C9.02-9.02v-101.7c0-4.97-4.05-9.02-9.02-9.02h-118.96Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m500.81%2C410.04h-118.96c-7.18%2C0-13.02-5.84-13.02-13.02v-101.7c0-7.18%2C5.84-13.02%2C13.02-13.02h118.96c7.18%2C0%2C13.02%2C5.84%2C13.02%2C13.02v101.7c0%2C7.18-5.84%2C13.02-13.02%2C13.02Zm-118.96-123.74c-4.97%2C0-9.02%2C4.05-9.02%2C9.02v101.7c0%2C4.97%2C4.05%2C9.02%2C9.02%2C9.02h118.96c4.97%2C0%2C9.02-4.05%2C9.02-9.02v-101.7c0-4.97-4.05-9.02-9.02-9.02h-118.96Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m662.54%2C410.04h-118.96c-7.18%2C0-13.02-5.84-13.02-13.02v-101.7c0-7.18%2C5.84-13.02%2C13.02-13.02h118.96c7.18%2C0%2C13.02%2C5.84%2C13.02%2C13.02v101.7c0%2C7.18-5.84%2C13.02-13.02%2C13.02Z%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m0%2C468.3c0%2C.94%2C1.07%2C1.69%2C2.41%2C1.69h945.03c1.33%2C0%2C2.41-.75%2C2.41-1.69s-1.07-1.69-2.41-1.69H2.41c-1.33%2C0-2.41.75-2.41%2C1.69Z%22%20fill%3D%22%232f2e43%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m702.47%2C89.43l12.27-9.55s14%2C4.36%2C14.36%2C4.54%2C21.73%2C49.74%2C21.73%2C49.74c0%2C0-54.74%2C28.02-50.74%2C25.28%2C4-2.72%2C3.17-39.65-.55-44.46-3.73-4.82-.55-16.92-.55-16.92l3.45-8.64h.02Z%22%20fill%3D%22%232f2e43%22%20stroke-width%3D%220%22/%3E%3Cpolygon%20points%3D%22736.39%20111.76%20719.75%20111.76%20719.75%20138.16%20738.1%20132.13%20736.39%20111.76%22%20fill%3D%22%23f2a2a5%22%20stroke-width%3D%220%22/%3E%3Cpath%20id%3D%22uuid-e8a90abb-812c-425b-81fc-a172025cdd8e-44-44%22%20d%3D%22m682.03%2C282.01c.43-2.41.26-4.9-.5-7.26l5.8-24.93-12.37-2.59-4.54%2C25.57c-1.48%2C1.96-2.44%2C4.26-2.8%2C6.68-1%2C6.05%2C1.43%2C11.53%2C5.41%2C12.22%2C3.98.7%2C8.01-3.64%2C9.01-9.69h0Z%22%20fill%3D%22%23f2a2a5%22%20stroke-width%3D%220%22/%3E%3Crect%20x%3D%22714.02%22%20y%3D%22427.7%22%20width%3D%2217.18%22%20height%3D%2224.37%22%20fill%3D%22%23f2a2a5%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m697.3%2C466.82c7.54%2C0%2C18.55-.79%2C18.63-.8%2C2.95.26%2C17.65%2C1.42%2C18.38-1.94.67-3.09-.32-6.32-.46-6.77-1.42-14.05-1.94-14.22-2.26-14.31-.5-.15-1.96.55-4.33%2C2.08l-.15.1-.03.17c-.04.21-1.09%2C5.37-6.07%2C4.59-3.41-.54-4.52-1.3-4.87-1.67.29-.13.65-.36.9-.75.37-.57.43-1.31.19-2.2-.64-2.33-2.56-5.78-2.64-5.93l-.22-.39-19.52%2C13.17-12.06%2C3.45c-.91.25-1.64.91-2.01%2C1.78h0c-.51%2C1.21-.2%2C2.63.79%2C3.51%2C2.19%2C1.97%2C6.55%2C5.34%2C11.11%2C5.76%2C1.21.11%2C2.82.16%2C4.63.16h0Z%22%20fill%3D%22%232f2e43%22%20stroke-width%3D%220%22/%3E%3Crect%20x%3D%22770.69%22%20y%3D%22411.25%22%20width%3D%2217.18%22%20height%3D%2224.37%22%20transform%3D%22translate%28-106.02%20476.52%29%20rotate%28-31.95%29%22%20fill%3D%22%23f2a2a5%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m760.75%2C463.49c2.4%2C0%2C5.05-.34%2C7.28-1.47%2C5.63-2.83%2C19.32-12.78%2C19.4-12.85%2C2.63-1.33%2C15.72-8.13%2C14.56-11.37-1.07-2.98-3.62-5.2-3.97-5.5-8.64-11.18-9.16-11.04-9.48-10.95-.51.14-1.37%2C1.5-2.58%2C4.05l-.07.16.07.16c.08.21%2C1.92%2C5.14-2.72%2C7.1-3.18%2C1.35-4.52%2C1.3-5.01%2C1.16.18-.27.36-.65.37-1.12.02-.68-.32-1.35-1-1.97-1.78-1.64-5.23-3.55-5.38-3.63l-.39-.21-9.6%2C21.51-8.41%2C9.3c-.64.7-.91%2C1.64-.76%2C2.58h0c.21%2C1.3%2C1.23%2C2.33%2C2.53%2C2.56%2C1.32.23%2C3.17.48%2C5.19.48h0Z%22%20fill%3D%22%232f2e43%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m743.85%2C223.88s5.57%2C0%2C14.3%2C17.46c8.73%2C17.47-2.38%2C87.57-2.38%2C87.57l31.1%2C80.48-21.82%2C15.28-39.83-86.2%2C9.82%2C95.48h-24.55l-19.1-165.32%2C4.36-44.74h48.1s0%2C0%2C0%2C0Z%22%20fill%3D%22%232f2e43%22%20stroke-width%3D%220%22/%3E%3Cpolygon%20points%3D%22747.59%20127.86%20714.31%20127.86%20684.3%20226.61%20767.77%20226.61%20747.59%20127.86%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m719.57%2C127.86l-33.83%2C140.22h-16.92s25.64-129.85%2C27.83-135.31c2.18-5.46%2C22.91-4.91%2C22.91-4.91h0Z%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3Ccircle%20cx%3D%22722.03%22%20cy%3D%22100.78%22%20r%3D%2218.28%22%20fill%3D%22%23f2a2a5%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m699.26%2C97.45l4.48.76c4.18-16.74%2C13.65-11.27%2C14.55-11.46s14.36%2C14.54%2C13.27%2C29.46c-1.09%2C14.91%2C18.19%2C21.9%2C18.19%2C21.9%2C0%2C0%2C6.74%2C12.66.73%2C35.57s6.73%2C30.6%2C6.73%2C30.6c25.1-2.13%2C10.01-37.15%2C6.01-43.51-4-6.37-1.27-17.46-1.27-17.46%2C6.19-5.46-1.09-17.46-1.09-17.46%2C0%2C0%2C1.28-16.01-2.54-19.1-3.82-3.09-4-10.73-4-10.73-6.74-29.28-28.74-23.64-28.74-23.64-28.19-3.09-26.31%2C25.06-26.31%2C25.06Z%22%20fill%3D%22%232f2e43%22%20stroke-width%3D%220%22/%3E%3Cpath%20id%3D%22uuid-dec0bcbe-f1ad-43aa-8153-40375ac32d1e-45-45%22%20d%3D%22m782.02%2C279.08h0c-.46-2.41-1.5-4.68-3.05-6.61l-3.44-25.37-12.49%2C1.98%2C4.83%2C25.52c-.67%2C2.36-.75%2C4.84-.24%2C7.24%2C1.21%2C6.01%2C5.42%2C10.26%2C9.39%2C9.5%2C3.97-.76%2C6.21-6.25%2C4.99-12.26h0Z%22%20fill%3D%22%23f2a2a5%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m764.4%2C266.43h16.92s-25.64-129.85-27.83-135.31c-2.18-5.46-20.44-3.14-20.44-3.14%2C0%2C0%2C31.35%2C138.45%2C31.35%2C138.45Z%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3C/svg%3E"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--====== Everything Start ======-->
+<section class="everything-area" id="everything" style="background-color: transparent">
+<div class="everything-shape shape-1 bg-primary" style="opacity: 0.2"></div>
+<div class="everything-shape shape-2"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="everything-image mt-50 wow fadeInLeftBig" data-wow-delay="0.3s" data-wow-duration="1s">
+<div class="image">
+<img alt="" class="feature3" id="img-fluid" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%22949.85%22%20height%3D%22463.64%22%20viewBox%3D%220%200%20949.85%20463.64%22%3E%3Cpath%20d%3D%22m0%2C418.39c0%2C.94%2C1.07%2C1.69%2C2.41%2C1.69h945.03c1.33%2C0%2C2.41-.75%2C2.41-1.69s-1.07-1.69-2.41-1.69H2.41c-1.33%2C0-2.41.75-2.41%2C1.69Z%22%20fill%3D%22%232f2e43%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m789.19%2C420.78H162.66V17.31c0-9.54%2C7.76-17.31%2C17.31-17.31h591.91c9.54%2C0%2C17.31%2C7.76%2C17.31%2C17.31v403.47Z%22%20fill%3D%22%232f2e41%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m841.34%2C463.64H108.95c-2.53%2C0-4.6-1.57-5.29-4.01-.68-2.43.27-4.86%2C2.43-6.17l57.09-34.83h626.22l.18.11%2C54.72%2C34.77c2.11%2C1.34%2C3.03%2C3.76%2C2.33%2C6.17-.7%2C2.4-2.77%2C3.96-5.27%2C3.96Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Crect%20x%3D%22179.09%22%20y%3D%2225.72%22%20width%3D%22592.95%22%20height%3D%22368.63%22%20fill%3D%22%23fff%22%20stroke-width%3D%220%22/%3E%3Cpolygon%20points%3D%22794.9%20441.5%20159.09%20441.5%20190.52%20416%20764.9%20416%20794.9%20441.5%22%20fill%3D%22%232f2e41%22%20stroke-width%3D%220%22/%3E%3Cpolygon%20points%3D%22626.31%20458.64%20324.83%20458.64%20336.26%20441.5%20614.88%20441.5%20626.31%20458.64%22%20fill%3D%22%232f2e41%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m653.28%2C171.49h-31.41c-2.73%2C0-4.95-2.22-4.95-4.95s2.22-4.95%2C4.95-4.95h31.41c2.73%2C0%2C4.95%2C2.22%2C4.95%2C4.95s-2.22%2C4.95-4.95%2C4.95Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m689.4%2C171.49h-14.66c-2.73%2C0-4.95-2.22-4.95-4.95s2.22-4.95%2C4.95-4.95h14.66c2.73%2C0%2C4.95%2C2.22%2C4.95%2C4.95s-2.22%2C4.95-4.95%2C4.95Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m338.8%2C175.27h-95.6c-4.88%2C0-8.85-3.97-8.85-8.85s3.97-8.85%2C8.85-8.85h95.6c4.88%2C0%2C8.85%2C3.97%2C8.85%2C8.85s-3.97%2C8.85-8.85%2C8.85Z%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m286.97%2C198.88h-46.07c-2.97%2C0-5.4-2.42-5.4-5.4s2.42-5.4%2C5.4-5.4h46.07c2.97%2C0%2C5.4%2C2.42%2C5.4%2C5.4s-2.42%2C5.4-5.4%2C5.4Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m540.95%2C220.19H239.74c-2.97%2C0-5.4-2.42-5.4-5.4s2.42-5.4%2C5.4-5.4h301.21c2.97%2C0%2C5.4%2C2.42%2C5.4%2C5.4s-2.42%2C5.4-5.4%2C5.4Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m515.04%2C234.59H239.74c-2.97%2C0-5.4-2.42-5.4-5.4s2.42-5.4%2C5.4-5.4h275.29c2.97%2C0%2C5.4%2C2.42%2C5.4%2C5.4s-2.42%2C5.4-5.4%2C5.4Z%22%20fill%3D%22%23dfdfdf%22%20stroke-width%3D%220%22/%3E%3Cpolygon%20points%3D%22838.74%20152.18%20824.02%20157.02%20824.02%20135.82%20837.38%20135.82%20838.74%20152.18%22%20fill%3D%22%23f2a7aa%22%20stroke-width%3D%220%22/%3E%3Ccircle%20cx%3D%22825.84%22%20cy%3D%22127.02%22%20r%3D%2214.67%22%20fill%3D%22%23f2a7aa%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m829.87%2C125.57c-2.46-.07-4.07-2.56-5.02-4.82-.95-2.27-1.94-4.87-4.21-5.81-1.86-.77-5.15%2C4.4-6.62%2C3.03-1.53-1.43-.04-8.81%2C1.59-10.13s3.85-1.58%2C5.95-1.68c5.11-.24%2C10.26.18%2C15.27%2C1.22%2C3.1.65%2C6.29%2C1.62%2C8.53%2C3.86%2C2.83%2C2.84%2C3.56%2C7.13%2C3.76%2C11.14.21%2C4.1-.03%2C8.4-2.02%2C11.98-1.99%2C3.59-6.17%2C6.24-10.17%2C5.32-.4-2.18%2C0-4.41.16-6.62.15-2.21%2C0-4.59-1.35-6.35s-4.23-2.45-5.8-.89%22%20fill%3D%22%2336344e%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m847.92%2C130.65c1.47-1.08%2C3.22-1.97%2C5.03-1.75%2C1.95.24%2C3.6%2C1.85%2C4.1%2C3.75s-.06%2C4-1.27%2C5.55c-1.21%2C1.55-3%2C2.58-4.9%2C3.1-1.1.3-2.3.42-3.35-.03-1.54-.66-2.37-2.64-1.77-4.2%22%20fill%3D%22%2336344e%22%20stroke-width%3D%220%22/%3E%3Crect%20x%3D%22820.09%22%20y%3D%22388%22%20width%3D%2213.79%22%20height%3D%2219.56%22%20fill%3D%22%23f2a7aa%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m806.66%2C419.41c-1.45%2C0-2.74-.04-3.71-.13-3.66-.34-7.16-3.04-8.92-4.62-.79-.71-1.04-1.84-.63-2.82h0c.29-.7.88-1.22%2C1.61-1.43l9.68-2.77%2C15.67-10.58.17.31c.07.12%2C1.6%2C2.89%2C2.12%2C4.76.2.71.14%2C1.31-.15%2C1.77-.21.32-.49.5-.73.61.28.3%2C1.17.9%2C3.91%2C1.34%2C3.99.64%2C4.84-3.51%2C4.87-3.68l.03-.14.12-.08c1.9-1.23%2C3.07-1.78%2C3.48-1.66.25.08.67.2%2C1.81%2C11.49.11.35.91%2C2.95.37%2C5.43-.59%2C2.7-12.39%2C1.77-14.75%2C1.56-.07%2C0-8.9.64-14.96.64Z%22%20fill%3D%22%2336344e%22%20stroke-width%3D%220%22/%3E%3Crect%20x%3D%22865.58%22%20y%3D%22374.8%22%20width%3D%2213.79%22%20height%3D%2219.56%22%20transform%3D%22translate%28-71.35%20519.94%29%20rotate%28-31.95%29%22%20fill%3D%22%23f2a7aa%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m857.61%2C416.73c-1.62%2C0-3.11-.19-4.17-.38-1.04-.18-1.86-1.01-2.03-2.06h0c-.12-.75.1-1.5.61-2.07l6.75-7.47%2C7.7-17.27.31.17c.12.06%2C2.89%2C1.6%2C4.32%2C2.92.54.5.81%2C1.03.8%2C1.58%2C0%2C.38-.15.69-.29.9.4.1%2C1.47.14%2C4.03-.94%2C3.73-1.57%2C2.25-5.54%2C2.19-5.71l-.05-.13.06-.13c.97-2.05%2C1.66-3.14%2C2.07-3.25.25-.07.68-.18%2C7.61%2C8.79.28.24%2C2.33%2C2.02%2C3.19%2C4.42.93%2C2.6-9.58%2C8.06-11.69%2C9.13-.07.05-11.06%2C8.04-15.57%2C10.31-1.79.9-3.91%2C1.18-5.84%2C1.18Z%22%20fill%3D%22%2336344e%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m844.04%2C224.38h-38.61l-3.5%2C35.92%2C15.33%2C132.71h19.71l-7.88-76.65%2C31.97%2C69.2%2C17.52-12.26-24.97-64.6s8.92-56.28%2C1.91-70.3c-7.01-14.02-11.48-14.02-11.48-14.02Z%22%20fill%3D%22%2336344e%22%20stroke-width%3D%220%22/%3E%3Cpolygon%20points%3D%22863.24%20226.57%20801.92%20226.57%20820.32%20147.3%20847.03%20147.3%20863.24%20226.57%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3Cpath%20id%3D%22uuid-52db3307-ec3e-496d-a5d4-9d1f33ffc652-45-45-44-44%22%20d%3D%22m786.69%2C145.73c-.98-4.82.81-9.23%2C4-9.84%2C3.19-.61%2C6.56%2C2.8%2C7.54%2C7.63.42%2C1.92.35%2C3.91-.19%2C5.81l3.88%2C20.49-10.02%2C1.58-2.76-20.36c-1.24-1.55-2.08-3.37-2.45-5.31h0Z%22%20fill%3D%22%23f2a7aa%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m846.38%2C147.3h-23.56l-15.88%2C31.77-5.99-23.8-13.16%2C1.4s3.11%2C46.51%2C16.73%2C44.94c13.61-1.57%2C45.36-43.48%2C41.87-54.3Z%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3Cpath%20id%3D%22uuid-2800d917-a06e-4fc6-b661-0f9df9cadefc-46-46-45-45%22%20d%3D%22m872.7%2C268.11c.98%2C4.82-.81%2C9.23-4%2C9.84-3.19.61-6.56-2.8-7.54-7.63-.42-1.92-.35-3.91.19-5.81l-3.88-20.49%2C10.02-1.58%2C2.76%2C20.36c1.24%2C1.55%2C2.08%2C3.37%2C2.45%2C5.31%2C0%2C0%2C0%2C0%2C0%2C0Z%22%20fill%3D%22%23f2a7aa%22%20stroke-width%3D%220%22/%3E%3Cpath%20d%3D%22m832.95%2C147.3s13.39-.57%2C14.08%2C0c3.65%2C2.99%2C25.09%2C110.66%2C25.09%2C110.66h-13.58s-25.6-110.66-25.6-110.66Z%22%20fill%3D%22%238c00ff%22%20stroke-width%3D%220%22/%3E%3C/svg%3E"/>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="everything-content-wrapper mt-50">
+<div class="section-title">
+<p class="sub-title">Individual housing</p>
+<h2 class="title" id="feat_title3">Individual housing</h2>
+</div>
+<div class="everything-content">
+<ul class="everything-items">
+<li>
+<span>01</span>
+<p id="feat_desc3" style="font-size: 16px"> </p>
+</li>
+</ul>
+<a class="main-btn main-btn-2 bg-primary" href="/in">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 
                                               <!-- Footer Section -->
