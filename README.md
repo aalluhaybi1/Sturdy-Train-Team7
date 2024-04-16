@@ -1,10 +1,5 @@
 # Welcome to StudentSmartRentals
 
-# Team member
-> [ Ayman Alluhaybi ]( https://github.com/aalluhaybi1 )
-> 
-> [ Saleh Basalim ]( https://github.com/salehmb89 )
-> 
 # Product Overview
 
 ## Description:
@@ -80,4 +75,12 @@ As a user, I can:
 
 - [ ] Create, read, update and delete **Apartments**
 ![Screenshot 2024-04-02 065028‘UNA](https://github.com/aalluhaybi1/Sturdy-Train-Team7/assets/156353463/0a9143e1-ef33-4289-a336-7532bbc7a4a4)
+
+
+
+# Team member
+> [ Ayman Alluhaybi ]( https://github.com/aalluhaybi1 )
+> 
+> [ Saleh Basalim ]( https://github.com/salehmb89 )
+> 
 
