@@ -1,6 +1,7 @@
 # Welcome to our App
 
 # Product Overview
+This site is to help international students from the moment they arrive at the airport until they obtain suitable housing for them.
 
 ## Step 1: Airport Arrival Assistance
 
