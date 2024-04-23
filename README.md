@@ -7,7 +7,7 @@ tacts for advice and recommendations on housing options.
 
 
 
-# >>>>>>>>
+# Story>>
 
 ***
 
@@ -79,7 +79,7 @@ tacts for advice and recommendations on housing options.
 
 
 
-# Story...
+# >>>>>
 
 ![mermaid-diagram-20240328072243](https://github.com/aalluhaybi1/Sturdy-Train-Team7/assets/156353463/59152c39-f955-4a24-a163-584b0bf1e825)
 
