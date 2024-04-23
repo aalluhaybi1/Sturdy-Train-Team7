@@ -185,10 +185,10 @@
         </div>
     </div>
     
-    <div class="form-container hidden" style="margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
+    <div class="form-container" style="margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
         <h3 style="text-align: center;">Flight Information</h3>
         <!-- HTML form -->
-        <form id="flightForm" onsubmit="submitFlightInfo(event)" style="margin-top: 20px;">
+        <form id="flightForm" method="POST" action="/addName" style="margin-top: 20px;">
             <!-- Add CSRF Token -->
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
             
