@@ -181,14 +181,13 @@
                 of your flight (in English) to <a href="mailto:oiaservices@una.edu">oiaservices@una.edu</a>. You will be
                 driven to Florence, Alabama, and brought to a local hotel. You are responsible to pay for one to three
                 nights in the hotel before you can move into the university residences or apartments.</p>
-            <button onclick="showFlightForm()">Enter Flight Information</button>
         </div>
     </div>
-    
+
     <div class="form-container" style="margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
         <h3 style="text-align: center;">Flight Information</h3>
         <!-- HTML form -->
-        <form id="flightForm" onsubmit="submitFlightInfo(event)" method="POST" action="/addName" style="margin-top: 20px;">
+        <form method="POST" action="/addName" style="margin-top: 20px;">
             <!-- Add CSRF Token -->
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
             
@@ -215,80 +214,7 @@
             <input type="submit" value="Submit" style="background-color: #00c0d9; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer; font-size: 16px;">
         </form>
     </div>
-    
-    <!-- Thank you message modal -->
-    <div id="thankYouModal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3>Thank You!</h3>
-            <p>Your flight information has been submitted successfully.</p>
-        </div>
-    </div>
-    
-    <script>
-        function toggleShuttleInfo() {
-            var shuttleInfo = document.querySelector('.shuttle-info');
-            shuttleInfo.classList.toggle('hidden');
-        }
-    
-        function showFlightForm() {
-            var flightForm = document.getElementById('flightForm');
-            flightForm.classList.remove('hidden');
-        }
-    
-        function submitFlightInfo(event) {
-            event.preventDefault();
-            // You'll need to implement form submission using AJAX or fetch API
-            // Once the form is submitted successfully, display the thank you message modal
-            var modal = document.getElementById('thankYouModal');
-            modal.classList.remove('hidden');
-        }
-    
-        function closeModal() {
-            var modal = document.getElementById('thankYouModal');
-            modal.classList.add('hidden');
-        }
-    </script>
-    
-    <style>
-        /* Modal styles */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-    
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-            border-radius: 5px;
-        }
-    
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-    
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-    
+
     <!-- Library Records Section -->
     <section class="py-5" style="background-color: #f8f9fa;">
         <div class="container">
