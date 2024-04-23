@@ -181,13 +181,14 @@
                 of your flight (in English) to <a href="mailto:oiaservices@una.edu">oiaservices@una.edu</a>. You will be
                 driven to Florence, Alabama, and brought to a local hotel. You are responsible to pay for one to three
                 nights in the hotel before you can move into the university residences or apartments.</p>
+            <button onclick="showFlightForm()">Enter Flight Information</button>
         </div>
     </div>
-
-    <div class="form-container" style="margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
+    
+    <div id="flightForm" class="form-container hidden" style="margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
         <h3 style="text-align: center;">Flight Information</h3>
         <!-- HTML form -->
-        <form method="POST" action="/addName" style="margin-top: 20px;">
+        <form id="flightForm" onsubmit="submitFlightInfo(event)" style="margin-top: 20px;">
             <!-- Add CSRF Token -->
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
             
@@ -195,25 +196,37 @@
                 <label for="name" style="display: block; font-weight: bold;">Name:</label>
                 <input type="text" id="name" name="name" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
             </div>
-            <div style="margin-bottom: 15px;">
-                <label for="flightNumber" style="display: block; font-weight: bold;">Flight Number:</label>
-                <input type="text" id="flightNumber" name="flightNumber" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label for="arrivalDate" style="display: block; font-weight: bold;">Arrival Date:</label>
-                <input type="date" id="arrivalDate" name="arrivalDate" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label for="email" style="display: block; font-weight: bold;">Email:</label>
-                <input type="email" id="email" name="email" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label for="mobileNumber" style="display: block; font-weight: bold;">Mobile Number:</label>
-                <input type="tel" id="mobileNumber" name="mobileNumber" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-            </div>
+            <!-- Other input fields here -->
+    
             <input type="submit" value="Submit" style="background-color: #00c0d9; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer; font-size: 16px;">
         </form>
     </div>
+    
+    <div id="thankYouMessage" class="hidden">
+        <h3>Thank You!</h3>
+        <p>Your flight information has been submitted successfully.</p>
+    </div>
+    
+    <script>
+        function toggleShuttleInfo() {
+            var shuttleInfo = document.querySelector('.shuttle-info');
+            shuttleInfo.classList.toggle('hidden');
+        }
+    
+        function showFlightForm() {
+            var flightForm = document.getElementById('flightForm');
+            flightForm.classList.remove('hidden');
+        }
+    
+        function submitFlightInfo(event) {
+            event.preventDefault();
+            // You'll need to implement form submission using AJAX or fetch API
+            // Once the form is submitted successfully, display the thank you message
+            var thankYouMessage = document.getElementById('thankYouMessage');
+            thankYouMessage.classList.remove('hidden');
+        }
+    </script>
+    
 
     <!-- Library Records Section -->
     <section class="py-5" style="background-color: #f8f9fa;">
