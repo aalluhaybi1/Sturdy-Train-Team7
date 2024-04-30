@@ -117,7 +117,7 @@ app.get('/in', async (req, res) => {
 app.post('/addName', async (req, res) => {
   try {
     await insertName(req.body);
-    res.redirect('/');
+    res.redirect('tp');
   } catch (error) {
     console.error('Error adding name:', error);
     res.status(500).send('Internal Server Error');
